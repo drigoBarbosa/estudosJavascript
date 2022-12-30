@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste seu País</title>
+    <style>
+      #container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 200px;
+        margin-bottom: 200px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="box">
+        <h1>Sistema de verificação de Nacionalidade</h1>
+        <h3>(1) BRASIL <br/> (2) EUA <br/> (3) CHINA <br/></h3>
+        <h3>Digite o valor correspondente ao seu País.</h3>
+        <input type="number" name="entrada" id="entrada" />
+        <input type="button" value="verificar" onclick="verificar">
+        <h3>Resposta:</h3>
+      </div>
+    </div>
+     
+          
+          
+    <script>
+      function verificar(){
+          var numPais = window.document.querySelector('input#entrada')
+          var resp = window.document.querySelector('div#resposta')
+          var texto = (`Seu paìs é ${numPais}, você é Brasileiro! `)
+          var texto2 = (`Seu paìs é ${numPais}, você é Gringo! `)
+          var texto3 = (`Seu paìs é ${numPais}, você é Gringo! `)
+
+          if (numPais == '1'){
+            resp.innerHTML += (texto);
+          } else if (numPais == '2'){
+            resp.innerHTML = (texto2);
+          }
+      }
+    </script>
+  </body>
+</html>
