@@ -8,8 +8,6 @@
 </head>
 <style>
     #container {
-        width: 100vw;
-        height: 100vh;
         background: #ffffff;
         display: flex;
         flex-direction: row;
@@ -23,7 +21,7 @@
         background: rgb(255, 0, 0);
     }
 
-    div#primeira-linha{
+    .linhas-numericas{
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -36,33 +34,7 @@
         text-align: center;
         border: solid 5px rgb(133, 133, 133);
     }
-    div#segunda-linha{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        font: normal 20pt arial;
-        background: rgb(0, 0, 0);
-        color: white;
-        width: 350px;
-        height: 100px;
-        line-height: 50px;
-        text-align: center;
-        border: solid 5px rgb(133, 133, 133);
-    }
-    div#terceira-linha{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        font: normal 20pt arial;
-        background: rgb(0, 0, 0);
-        color: white;
-        width: 350px;
-        height: 100px;
-        line-height: 50px;
-        text-align: center;
-        border: solid 5px rgb(133, 133, 133);
-    }
-    div#resultado{
+    .linha-padrao{
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -75,38 +47,97 @@
         text-align: center;
         border: solid 5px rgb(133, 133, 133);
     }
+    input{
+        text-decoration: white;
+        background: rgb(0, 0, 0);
+        color: white;
+        font: normal 20pt arial;
+        border: 1px solid white;
+    }
 
 </style>
 <body>
     <div id="container">
         <div id="box">
-            <div id="primeira-linha">
-                <div class="botton" onclick="clicar()">7</div>
-                <div class="botton" onclick="clicar()">8</div>
-                <div class="botton" onclick="clicar()">9</div>
+            <div class="linha-padrao" id="resultado">Resultado</div>
+            <div class="linhas-numericas">
+                <input type="button" value="7" onclick="clicar7()">
+                <input type="button" value="8" onclick="clicar8()">
+                <input type="button" value="9" onclick="clicar9()">
+                <input type="button" value="-" onclick="clicarmenos()">
             </div>
 
-            <div id="segunda-linha">
-                <div class="botton" onclick="clicar()">4</div>
-                <div class="botton" onclick="clicar()">5</div>
-                <div class="botton" onclick="clicar()">6</div>
+            <div class="linhas-numericas">
+                <input type="button" value="4" onclick="clicar4()">
+                <input type="button" value="5" onclick="clicar5()">
+                <input type="button" value="6" onclick="clicar6()">
+                <input type="button" value="+" onclick="clicarmais()">
             </div>
 
-            <div id="terceira-linha">
-                <div class="botton" onclick="clicar()">1</div>
-                <div class="botton" onclick="clicar()">2</div>
-                <div class="botton" onclick="clicar()">3</div>
+            <div class="linhas-numericas">
+                <input type="button" value="1" onclick="clicar1()">
+                <input type="button" value="2" onclick="clicar2()">
+                <input type="button" value="3" onclick="clicar3()">
+                <input type="button" value="=" onclick="resultado()">
             </div>
-
-            <div id="resultado">Resultado</div>
+            <div class="linhas-numericas">
+                <input type="button" value="0" onclick="clicar0()">
+                <input type="reset" value="del">
+            </div>
+            <div class="linha-padrao">
+                <div id="primeiro-valor">---</div>
+                <div id="operacao">---</div>
+                <div id="segundo-valor">---</div>     
+            </div> 
+            
         </div>
     </div>
 
     <script>
-        function clicar(){
-            
-        }
+        var num1 = document.getElementById('primeiro-valor')
+        var num2 = document.getElementById('segundo-valor')
+        var operacao = document.getElementById('operacao')
+        var res = document.getElementById('resultado')
 
+        
+
+
+        // function clicar1(){
+        //     var num = 1
+        //     num1.innerText = 1
+        // }
+        // function clicar2(){
+        //     var num = 2
+        //     num1.innerText = 2
+        // }
+        // function clicar3(){
+        //     var num = 3
+        //     num1.innerText = 3
+        // }
+        // function clicar4(){
+        //     var num = 4
+        //     num1.innerText = 4
+        // }
+        // function clicar5(){
+        //     var num = 5
+        //     num1.innerText = 5
+        // }
+        // function clicar6(){
+        //     var num = 6
+        //     num1.innerText = 6
+        // }
+        // function clicar7(){
+        //     var num = 7
+        //     num1.innerText = 7
+        // }
+        // function clicar8(){
+        //     var num = 8
+        //     num1.innerText = 8
+        // }
+        // function clicar9(){
+        //     var num = 9
+        //     num1.innerText = 9
+        // }
     </script>
     
 </body>
