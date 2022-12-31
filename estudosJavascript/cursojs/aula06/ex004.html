@@ -7,12 +7,15 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="digitar"></div>
     
     <script>
         var nome = window.prompt('Qual é o seu nome? ')
+        var digitar = document.querySelector('div#digitar')
         document.write(`Seu nome é ${nome} e tem ${nome.length} letras`)
-        document.write(`Seu nome em maiusculas é ${nome.toUpperCase()}`)
+        var qualCoisa = (`Seu nome em maiusculas é ${nome.toUpperCase()}`)
         document.write(`Seu nome em minusculas é ${nome.toLowerCase()}`)
+        
     </script>
 
 </body>
