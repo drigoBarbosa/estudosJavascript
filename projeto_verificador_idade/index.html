@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hora do dia</title>
+    <title>Verificador de Idade</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 
 </head>                                         
 <body>  
     <header>
-        <h1>Verificador de Idade</h1>
+        <h1 id="titulo">Verificador de Idade</h1>
     </header>
     <section>
         <div>
@@ -19,9 +19,9 @@
                 <input type="number" name="txtano" id="txtano" min="0">
             </p>
             <p>Sexo:
-                <input type="radio" name="radsex" id="masc" checked>
+                <input type="radio" name="radsex" id="masc" value="M" >
                 <label for="masc">Masculino</label>
-                <input type="radio" name="radsex" id="femi" >
+                <input type="radio" name="radsex" id="femi" value="F" >
                 <label for="femi">Feminino</label>
             </p>
             <p>
@@ -29,7 +29,10 @@
             </p>
         </div>
         <div id="resposta">
-             Preencha os dados acima para ver o resultado!
+            Preencha os dados acima para ver o resultado!
+        </div>
+        <div id="foto">
+            <img id="imagem" src="/projeto_verificador_idade/imagens/interrogacao.png" alt="Qual é o sexo? ">
         </div>
     </section>
     <footer>
