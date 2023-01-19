@@ -1,5 +1,5 @@
 body {
-    background: rgb(63, 63, 179);
+    background: rgb(0, 0, 0);
     font: normal 15pt Arial;
 }
 
@@ -12,8 +12,8 @@ h1#titulo {
 }
 
 section {
-    background: white;
-    border-radius: 15px;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
     padding: 10px;
     width: 500px;
     margin: auto;
@@ -25,6 +25,36 @@ div {
     padding: 3px;
 }
 
+label#label-masc {
+    color: rgb(0, 0, 0);
+}
+
+label#label-masc:hover {
+    color: rgb(0, 224, 240);
+}
+
+label#label-femi {
+    color: rgb(0, 0, 0);
+}
+
+label#label-femi:hover {
+    color: rgb(255, 72, 103);;
+}
+
+input#botao {
+    width: 100px; 
+    height: 30px; 
+    font-size: large; 
+    border-radius: 15px; 
+    background: rgb(255, 255, 255); 
+    color: rgb(0, 0, 0); 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.355);
+}
+
+input#botao:hover {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
 footer {
     color: white;
     text-align: center;

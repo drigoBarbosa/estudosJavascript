@@ -21,10 +21,12 @@ function verificar(){
 
         if (idade == 0){ // VERIFICAR SE É UM BEBÊ, SE ELE NASCEU EM 2023 A IDADE VAI FICAR COM VALOR 0 PORQUE O MÊS DE NASCIMENTO NÃO ESTÁ SENDO CALCULADO, LOGO ELE TEM MENOS DE 1 ANO MAS TEM MESES OU DIAS DE NASCIDO. 
             if(genero == 'Homem'){
-                resposta.innerHTML = `Um menininho de poucos meses ou dias! `
+                resposta.innerHTML = ` Um menininho de poucos meses ou dias! `
+                document.body.style.background = 'blue'
                 imagem.src = '/projeto_verificador_idade/imagens/bebe_menino.png'
             } else if (genero == 'Mulher') {
                 resposta.innerHTML = `Uma menininha de poucos meses ou dias! `
+                document.body.style.background = 'rgb(243, 47, 80)'
                 imagem.src = '/projeto_verificador_idade/imagens/bebe_menina.png'
             } 
         } else if (idade > 0 && idade <= 12) { // VERIFICAR SE É UMA CRIANÇA COM IDADE ATÉ 12 ANOS
