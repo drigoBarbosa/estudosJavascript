@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamos Contar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Vamos Contar</h1>
+    </header>
+    <section>
+        <div id="principal">
+            <p>Início: <br><input type="number" name="txtInicio" id="txtInicio" placeholder="0" ></p>
+            <p style="text-align: end;">Fim: <br><input style="text-align: right;" type="number" name="txtFim" id="txtFim" placeholder="0"></p>
+            <p>Passo: <br><input type="number" name="txtPasso" id="txtPasso" placeholder="0"></p>
+            <input id="botao" type="button" value="Contar" onclick="contagem()">
+        </div>
+        <div id="resultado">Aguardando valores...</div>
+    </section>
+    <footer>
+        <p><a id="myname" href="https://github.com/drigoBarbosa">&copy;drigoBarbosa</a></p>
+    </footer>
+</body>
+</html>

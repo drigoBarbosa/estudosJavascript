@@ -1,0 +1,78 @@
+body {
+    background: rgb(25, 43, 44);
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border-radius: 25px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgb(39, 36, 36);
+}
+
+div#principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    margin: auto;
+    padding: 12px;
+}
+
+#botao {
+    background-color: dodgerblue;
+    padding: 10px;
+    width: 50%;
+    margin-top: 30px;
+    border: 0px;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+#botao:hover {
+    background-color: rgba(0, 195, 255, 0.925);
+    cursor: pointer;
+}
+
+#resultado {
+    margin-top: 30px;
+    padding: 15px;
+    border: solid 3px black;
+
+}
+footer {
+    margin-top: 50px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+a#myname {  
+    color: rgb(119, 119, 119);
+}
+
+a#myname:hover {  
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+#loader {
+    display: flex;
+    justify-content: end;
+}
+
+
+

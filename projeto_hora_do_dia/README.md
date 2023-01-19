@@ -1,1 +1,1 @@
-# Projeto proposto na aula 12: HORA DO DIA.
+# Projeto proposto no Módulo (Condições em JavaScript): HORA DO DIA.
