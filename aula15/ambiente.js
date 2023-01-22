@@ -1,7 +1,15 @@
 let num1 = [3, 5, 2, 9, 7, 6]
 
-// Pegando valor guardado no array pelo indice.
+// Mostrar valor guardado no array pelo indice.
 console.log(`Primeiro valor do array indice 0: ${num1[0]}`)
+
+// Add valores no array.
+
+// primeira forma
+// num1[6] = 1
+
+// segunda forma
+// num1.push(1)  
 
 // Atributo length do array para mostrar quantidade de espaços.
 console.log(`Quantidade de espaços no array num1: ${num1.length}`)
@@ -21,6 +29,6 @@ let testarNumero = 9
 let index = num2.indexOf(testarNumero) // O Metódo indexOf procura o valor que estiver entre parenteses no array, se não achar me retorna -1 por padrão, que significa que não tem aquele valor.
 
 if (index == -1){
-    (`Não foi encontrado o valor ${testarNUmero}`)/*  */
+    (`Não foi encontrado o valor ${testarNumero}`)/*  */
 }
 console.log(`Valor pedido está no indice: ${index}`)
