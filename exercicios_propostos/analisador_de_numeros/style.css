@@ -1,0 +1,32 @@
+body{
+    background: rgb(81, 56, 190);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+section{
+    background: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 500px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgb(44, 44, 44);
+}
+
+p#myname{
+    margin: 100px;
+}
+a#myname{
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+a#myname:hover{
+    text-decoration: none;
+    color: rgb(216, 198, 198);
+    font-size: 21px;
+}

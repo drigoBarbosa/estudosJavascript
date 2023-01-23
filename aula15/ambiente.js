@@ -26,7 +26,7 @@ console.log(`Valores dentro do array em ordem crescente! ${num1}`)
 let num2 = [3, 5, 2, 9, 7, 6]
 
 let testarNumero = 9
-let index = num2.indexOf(testarNumero) // O Metódo indexOf procura o valor que estiver entre parenteses no array, se não achar me retorna -1 por padrão, que significa que não tem aquele valor.
+let index = num2.indexOf(testarNumero) // O Metódo indexOf procura o valor que estiver entre parenteses dentro do array, se não achar me retorna -1 por padrão, que significa que não tem aquele valor.
 
 if (index == -1){
     (`Não foi encontrado o valor ${testarNumero}`)/*  */
