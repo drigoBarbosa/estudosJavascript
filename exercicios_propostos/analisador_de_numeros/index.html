@@ -16,13 +16,15 @@
         <div>
             <p>Digite um número(entre 1 e 100): 
                 <input type="number" name="num" id="num" placeholder=" 0">
-                <button type="submit" onclick="adicionar()">Adicionar</button>
+                <input type="button" value="Adicionar" onclick="adicionar()">
             </p>
+            <select name="listaNum" id="listaNum" size="6"></select>
+            <br><br><input type="button" value="Finalizar" onclick="finalizar()">
+        </div>
+        <div id="resposta">
             
         </div>
-        <div>
-            <select name="listaNum" id="listaNum"></select>
-        </div>
+        
     </section>
     <footer>
         <p id="myname"><a id="myname" href="http://github.com/drigoBarbosa">&copy;drigoBarbosa</a></p>
